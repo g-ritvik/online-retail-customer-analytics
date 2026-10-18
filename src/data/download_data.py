@@ -9,7 +9,7 @@ DATA_URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/00502/onli
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
-OUTPUT_PATH = os.path.join(DATA_DIR, "online_retail_II.csv")
+OUTPUT_PATH = os.path.join(DATA_DIR, "raw_online_retail_II.csv")
     
 def fetch_raw_data():
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -22,7 +22,7 @@ def fetch_raw_data():
             print("[*] Exiting without overwriting the file.")
             return
 
-    print(f"[*] Extracting raw data from :\n {DATA_URL}")
+    print(f"[*] Extracting raw data from : {DATA_URL}")
 
     try:
         start_time = t.time()
