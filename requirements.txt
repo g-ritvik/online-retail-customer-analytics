@@ -2,4 +2,4 @@ pandas
 numpy
 python-calamine
 matplotlib
-seaborn
+seaborn==0.13.2
