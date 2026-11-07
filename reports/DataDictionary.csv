@@ -1,0 +1,9 @@
+Feature Name,Business Label,Data Type,Unit,Null Count,Unique Values,Description
+Invoice,Invoice Number,object,ID,0,28816,"Unique transaction identifier (6-7 characters). Starts with '4' or '5' for standard sales, 'C' for cancellations, and 'A' for administrative adjustments."
+StockCode,Stock Code,object,SKU,0,4632,"Product or administrative item code. Primarily 5-digit numeric SKUs, alongside operational/shipping codes (e.g., 'POST', 'DOT') and discount flags."
+Description,Product Description,object,Text,2928,4681,"Descriptive name for products, operational fees, or vouchers. Contains historical missing values and warehouse logging noise."
+Quantity,Quantity Sold,int64,Count,0,825,Number of units ordered per transaction line. Negative values indicate product returns or reversals.
+InvoiceDate,Invoice Timestamp,object,Datetime,0,25296,Exact date and time when the transaction was generated.
+Price,Unit Price,float64,GBP (£),0,1606,Product price per unit stated in British Pounds Sterling.
+Customer ID,Customer ID,float64,ID,107927,4383,"Unique 5-digit customer identifier. Contains 107,927 missing entries."
+Country,Country,object,Text,0,40,Geographic region where the transaction or customer is located (40 unique countries).

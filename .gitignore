@@ -1,6 +1,6 @@
 __pycache__/
 .ipynb_checkpoints/
+.vscode
 
 # Data Files
-data/
-*.csv
+data/*.csv
