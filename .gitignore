@@ -4,3 +4,4 @@ __pycache__/
 
 # Data Files
 data/*.csv
+data/*
